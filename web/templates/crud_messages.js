@@ -1,7 +1,5 @@
 $(function(){
     var url = "http://127.0.0.1:8080/messages";
-
-
     $("#grid").dxDataGrid({
         dataSource: DevExpress.data.AspNet.createStore({
             key: "id",
@@ -65,6 +63,5 @@ $(function(){
                     displayExpr: "username"
                 }
         }, ],
-
     }).dxDataGrid("instance");
 });
